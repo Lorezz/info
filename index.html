@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <meta http-equiv="Content-Type" content="text/html;">
     <meta charset="utf-8">
@@ -7,12 +8,21 @@
     <meta name="author" content="Lorezz">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58619081-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-58619081-1');
+    </script>
 </head>
-<body onload="start()" onresize="resize()" onorientationchange="resize()" >
-    <canvas id="starfield" width="1280" height="720" style="position: absolute;" onmousedown="booster()" onmouseup="brakes()" oncontextmenu="brakes()"></canvas>
+
+<body onload="start()" onresize="resize()" onorientationchange="resize()">
+    <canvas id="starfield" width="1280" height="720" style="position: absolute;" onmousedown="booster()"
+        onmouseup="brakes()" oncontextmenu="brakes()"></canvas>
     <div class="global-overlay" style="opacity: 9; ">
         <div class="overlay skew-part"></div>
     </div>
@@ -46,9 +56,9 @@
             </div>
         </div>
     </section>
-<script src="stfld.js"></script>
-<script>
-console.log(`
+    <script src="stfld.js"></script>
+    <script>
+        console.log(`
 .##........#######..########..########.########.########
 .##.......##.....##.##.....##.##............##.......##.
 .##.......##.....##.##.....##.##...........##.......##..
@@ -57,6 +67,7 @@ console.log(`
 .##.......##.....##.##....##..##........##.......##.....
 .########..#######..##.....##.########.########.########
 `)
-</script>
+    </script>
 </body>
+
 </html>
