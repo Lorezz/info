@@ -1,0 +1,62 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;">
+    <meta charset="utf-8">
+    <title>Lorezz</title>
+    <meta name="description" content="Lorezz personal page.">
+    <meta name="author" content="Lorezz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+</head>
+<body onload="start()" onresize="resize()" onorientationchange="resize()" >
+    <canvas id="starfield" width="1280" height="720" style="position: absolute;" onmousedown="booster()" onmouseup="brakes()" oncontextmenu="brakes()"></canvas>
+    <div class="global-overlay" style="opacity: 9; ">
+        <div class="overlay skew-part"></div>
+    </div>
+    <section class="left-side" class="" style="opacity: 1;">
+        <img src="logo.png" alt="Lorezz" loading="lazy" class="logo">
+        <div class="content">
+            <h2>Hi, my name is Lorenzo, aka Lorezz.</h2>
+            <p>I'm a full stack web developer.</p>
+            <p>You can write me an email at <a target="_blank" href="mailto:lorezz@lorezz.net">lorezz@lorezz.net</a></p>
+            <p>Or you can find me on the following socials</p>
+            <div class="social-icons">
+                <a href="https://github.com/lorezz">
+                    <span style="font-size: 32px; color: #fff;">
+                        <i class="fab fa-github-square"></i>
+                    </span></a>
+                <a href="https://twitter.com/wisejerk">
+                    <span style="font-size: 32px; color: #fff;">
+                        <i class="fab fa-twitter-square"></i>
+                    </span>
+                </a>
+                <a href="https://www.linkedin.com/in/lorenzoponticelli">
+                    <span style="font-size: 32px; color: #fff;">
+                        <i class="fab fa-linkedin"></i>
+                    </span>
+                </a>
+                <a href="https://medium.com/@lorezz">
+                    <span style="font-size: 32px; color: #fff;">
+                        <i class="fab fa-medium"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+<script src="stfld.js"></script>
+<script>
+console.log(`
+.##........#######..########..########.########.########
+.##.......##.....##.##.....##.##............##.......##.
+.##.......##.....##.##.....##.##...........##.......##..
+.##.......##.....##.########..######......##.......##...
+.##.......##.....##.##...##...##.........##.......##....
+.##.......##.....##.##....##..##........##.......##.....
+.########..#######..##.....##.########.########.########
+`)
+</script>
+</body>
+</html>
